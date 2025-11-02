@@ -1,0 +1,27 @@
+<!-- HTML 文件的開始-->
+<html>
+    <!--<head>:放置網頁資料-->
+    <head> 
+        <!--<title>:網頁瀏覽器中的標題-->
+        <title>css</title>
+        <!--external(外部) css:透過 <link> 引入外部 CSS 檔案 -->
+        <link rel="stylesheet" href="https://rawcdn.githack.com/shhuangmust/html/fc0253b382011528e5bcc69e74425c6d03f1adc3/import.css">
+        <!--internal(內部)css:使用 <style> 在 HTML 文件內寫 CSS -->
+        <style>
+            h2 {color:green;} 
+            /* 將所有 <h2> 標籤文字設為(綠色) */
+        </style>
+    </head>
+    <!--<body>:網頁的主要內容 -->
+    <body>
+
+        <h1 style="color:red;"> 
+            這是甚麼顏色 <!--inline(行內) CSS 設定文字為(紅色)-->
+        </h1>
+        <!-- 這裡會套用 internal CSS 的綠色 -->
+        <h2>這是甚麼顏色</h2>
+        <!-- 這裡沒有套用 CSS，套用瀏覽器預設顏色-->
+        <h3>這是甚麼顏色</h3>
+    </body>
+</html>
+<!-- HTML 文件的結束-->

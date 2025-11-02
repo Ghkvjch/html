@@ -1,0 +1,57 @@
+<!-- HTML 文件的開始-->
+<html>
+    <!-- <head>：設定網頁標題 -->
+    <head>
+        <!--<title>:網頁瀏覽器中的標題-->
+        <title>表格</title>
+    </head>
+    <!--<body>:網頁的主要內容 -->
+    <body>
+        <!-- 生成 2x3 的表格 -->
+        <table border="1">
+            <tr>
+                <td>1</td><td>2</td><td>3</td>
+            </tr>
+            <tr>
+                <td>4</td><td>5</td><td>6</td>
+            </tr>
+        </table>
+        <br> <!-- 換行 -->
+        <!--  使用 colspan 合併儲存格 -->
+        <table border="1">
+            <tr>
+                <!-- 合併第二、三左右水平的兩欄 -->
+                <td>1</td><td colspan="2">2 3</td>
+            </tr>
+            <tr>
+                <td>4</td><td>5</td><td>6</td>
+            </tr>
+        </table>
+        <br>
+        <!--  使用 rowspan 合併儲存格 -->
+        <table border="1">
+            <tr>
+                <!-- 合併第一欄的上下垂直兩列 -->
+                <td rowspan="2">1 4</td><td>2</td><td>3</td>
+            </tr>
+            <tr>
+                <td>5</td><td>6</td>
+            </tr>
+        </table>
+        <br>
+        <!-- 生成 3x3 的表格，同時使用 colspan 與 rowspan -->
+        <table border="1">
+            <tr>
+                <!-- 合併右上角四格 -->
+                <td>1</td><td colspan="2" rowspan="2">2 3 5 6</td>
+            </tr>
+            <tr>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>7</td><td>8</td><td>9</td>
+            </tr>
+        </table>
+    </body>
+</html>
+<!-- HTML 文件的結束-->

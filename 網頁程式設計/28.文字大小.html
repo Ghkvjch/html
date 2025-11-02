@@ -1,0 +1,28 @@
+<!-- HTML 文件的開始-->
+<html>
+    <!-- <head>：設定網頁標題 -->
+    <head>
+        <!--<title>:網頁瀏覽器中的標題-->
+        <title>文字顏色</title>
+        <!-- <style>：內嵌的 CSS 樣式區塊 -->
+        <style>
+            /* class f1：使用預設的 large 大小 */
+            .f1{ font-size:large; }
+            /* class f2：使用絕對單位 px 設定字體大小 */
+            .f2{ font-size:20px; }
+            /* class f3：使用相對單位 em，(1em = 16px) */
+            .f3{ font-size:2em; }
+        </style>
+    </head>
+    <!-- <body> =：放置網頁的主要內容 -->
+    <body>
+        <!-- 未設定 class 的段落，使用瀏覽器預設字體大小 -->
+        <p>原始大小</p>
+        <!-- 使用 class f1，字體大小為 large -->
+        <p class='f1'>關鍵字</p>
+        <!-- 使用 class f2，字體大小為 20px -->
+        <p class='f2'>絕對單位</p>
+        <!-- 使用 class f3，字體大小為 2em -->
+        <p class='f3'>相對單位</p>
+    </body>
+</html>
